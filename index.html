@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>MasterMind Web</h1>
+
+        <div id="partidas">
+            <div><h3 id="pJugadas"> Partidas Jugadas: 0</h3></div>
+            <div><h3 id="pGanadas"> Partidas Ganadas: 0</h3></div>
+            
+        </div>
+        <div id="opciones">
+            <div class="botonesNav" id="b1">home</div>
+            <div class="botonesNav" id="b2">mastermind</div>
+            
+            <div class="botonesNav" id="b3">MasJuegos</div>
+            
+        </div>
+        
+    </header>
+    
+    <main>
+        
+        <div id="cd"><h1 id="cronometro">01:00</h1></div>
+        
+        <div id="pantaña">
+            
+            <div id="instrucciones">
+
+                
+                <h1>guia</h1>
+                <h3 style="width: 10rem;"><strong>importante: el boton de inicio es el mismo para cambiar de ronda</strong></h3>
+                <h3>correcion</h3>
+                
+                    <div class="guia2">
+                        <div class="guiacorre" style="background-color: black;"></div>
+                        <p>color acertado posicion no</p>
+                    </div>
+                
+                
+                    <div class="guia2">
+                        <div class="guiacorre" style="background-color: white;"></div>
+                        <p>color y posicion acertado</p>
+                    </div>
+                
+                
+                    <div class="guia2">
+                        <div class="guiacorre" ></div>
+                        <p>color no esta</p>
+                    </div>
+                <h3>colores</h3>
+                <div>
+                    <div class="guia">
+                        <div class="color" style="background-color: rgb(196, 196, 31);"></div>
+                        <h4>amarillo</h4>
+                    </div>
+                    <div class="guia">
+                        <div class="color" style="background-color: rgb(177, 3, 3);"></div>
+                        <h4>rojo</h4>
+                    </div>
+                    <div class="guia">
+                        <div class="color" style="background-color: rgb(219, 219, 219);"></div>
+                        <h4>blanco</h4>
+                    </div>
+                    <div class="guia">
+                        <div class="color" style="background-color: rgb(219, 0, 219);"></div>
+                        <h4>rosa</h4>
+                    </div>
+                    <div class="guia">
+                        <div class="color" style="background-color: rgb(25, 0, 247);"></div>
+                        <h4>azul</h4>
+                    </div>
+                    <div class="guia">
+                        <div class="color" style="background-color: rgb(34, 114, 36);"></div>
+                        <h4>verde</h4>
+                    </div>
+                    <div class="guia">
+                        <div class="color" style="background-color: rgb(1, 249, 237);"></div>
+                        <h4>cian</h4>
+                    </div>
+                </div>
+                
+                
+                
+            
+            </div>
+            <div id="tablero">
+                <div class="linea" id="lineaResultado">
+                    <div class="correccion" id="play"><img src="play.png" alt="play" height="30rem"></div>
+                    <div class="casillaR" id="casR1">?</div>
+                    <div class="casillaR" id="casR2">?</div>
+                    <div class="casillaR" id="casR3">?</div>
+                    <div class="casillaR" id="casR4">?</div>
+                    
+                </div>
+                <div class="linea" >
+                    <div class="correccion">
+                        <div class="correccion1">
+                            <div class="corre1" id="cor11"><p>1</p></div>
+                            <div class="corre1" id="cor12"><p>2</p></div>
+                            <div class="corre1" id="cor13"><p>3</p></div>
+                            <div class="corre1" id="cor14"><p>4</p></div>     
+                        </div>
+                        
+                    </div>
+                    <div class="casilla1" id="cas11">1</div>
+                    <div class="casilla1" id="cas12">2</div>
+                    <div class="casilla1" id="cas13">3</div>
+                    <div class="casilla1" id="cas14">4</div>
+                    
+                    
+                </div>
+                <div class="linea" >
+                    <div class="correccion" >
+                        <div class="correccion1">
+                            <div class="corre2" id="cor21"><p>1</p></div>
+                            <div class="corre2" id="cor22"><p>2</p></div>
+                            <div class="corre2" id="cor23"><p>3</p></div>
+                            <div class="corre2" id="cor24"><p>4</p></div>
+                        </div>
+                    </div>
+                    <div class="casilla2" id="cas21">1</div>
+                    <div class="casilla2" id="cas22">2</div>
+                    <div class="casilla2" id="cas23">3</div>
+                    <div class="casilla2" id="cas24">4</div>
+                    
+                    
+                </div>
+                <div class="linea">
+                    <div class="correccion">
+                        <div class="correccion1">
+                            <div class="corre3" id="cor31"><p>1</p></div>
+                            <div class="corre3" id="cor32"><p>2</p></div>
+                            <div class="corre3" id="cor33"><p>3</p></div>
+                            <div class="corre3" id="cor34"><p>4</p></div>
+                        </div>
+                        
+                    </div>
+                    <div class="casilla3" id="cas31">1</div>
+                    <div class="casilla3" id="cas32">2</div>
+                    <div class="casilla3" id="cas33">3</div>
+                    <div class="casilla3" id="cas34">4</div>
+                </div>
+                <div class="linea">
+                    <div class="correccion">
+                        <div class="correccion1">
+                            <div class="corre4" id="cor41"><p>1</p></div>
+                            <div class="corre4" id="cor42"><p>2</p></div>
+                            <div class="corre4" id="cor43"><p>3</p></div>
+                            <div class="corre4" id="cor44"><p>4</p></div>
+                        </div>
+                        
+                    </div>
+                    <div class="casilla4" id="cas41">1</div>
+                    <div class="casilla4" id="cas42">2</div>
+                    <div class="casilla4" id="cas43">3</div>
+                    <div class="casilla4" id="cas44">4</div>
+                    
+                    
+                </div>
+                <div class="linea">
+                    <div class="correccion">
+                        <div class="correccion1">
+                            <div class="corre5" id="cor51"><p>1</p></div>
+                            <div class="corre5" id="cor52"><p>2</p></div>
+                            <div class="corre5" id="cor53"><p>3</p></div>
+                            <div class="corre5" id="cor54"><p>4</p></div>
+                        </div>
+                        
+                    </div>
+                    <div class="casilla5" id="cas51">1</div>
+                    <div class="casilla5" id="cas52">2</div>
+                    <div class="casilla5" id="cas53">3</div>
+                    <div class="casilla5" id="cas54">4</div>
+                    
+                    
+                </div>
+                <div class="linea">
+                    <div class="correccion">
+                        <div class="correccion1">
+                            <div class="corre6" id="cor61"><p>1</p></div>
+                            <div class="corre6" id="cor62"><p>2</p></div>
+                            <div class="corre6" id="cor63"><p>3</p></div>
+                            <div class="corre6" id="cor64"><p>4</p></div>
+                        </div>
+                        
+                    </div>
+                    <div class="casilla6" id="cas61">1</div>
+                    <div class="casilla6" id="cas62">2</div>
+                    <div class="casilla6" id="cas63">3</div>
+                    <div class="casilla6" id="cas64">4</div>
+                    
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </main>
+    <footer>
+        <h2>creado por Juan Querol León</h2>
+        <h2>curso: 2ºDAWE</h2>
+    
+        <div class="boton" id="github" ><h2>GitHub</h2></div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

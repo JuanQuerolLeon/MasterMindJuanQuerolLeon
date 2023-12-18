@@ -1,0 +1,319 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a; /* Fondo oscuro para un estilo espacial */
+    color: #ffffff; /* Texto blanco para mayor contraste */
+    
+}
+
+header {
+    background-color: #212121; /* Fondo más oscuro para el encabezado */
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.botonesNav {
+    height: 15vh;
+    width: 10vw;
+    background-color: #333333; /* Botones de navegación más oscuros */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.botonesNav:hover {
+    background-color: #555555; /* Efecto de hover más oscuro */
+}
+
+main {
+    height: 70vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #292929; /* Fondo oscuro para el contenido principal */
+    overflow-y: scroll;
+}
+#instrucciones{
+    height: 60vh;
+    background-color: #333333;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow-y: scroll;
+    
+    scrollbar-color: #333333 #212121;
+
+/* Establece el ancho de la barra de desplazamiento */
+scrollbar-width: thin;
+}
+
+#opciones {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#tablero {
+    height: 60vh;
+    width: 80vw;
+    background-color: #333333; /* Fondo oscuro para el tablero */
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#pantaña{
+    height: 60vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#lineaResultado {
+    background-color: #ff6347; /* Color naranja para la línea de resultado */
+    box-shadow: 0 0 10px rgba(255, 99, 71, 0.5); /* Sombra naranja */
+}
+.linea{
+    height: 25rem;
+    width: 10rem;
+    background-color: rgb(165, 42, 42);
+    border-radius: 10px;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+    align-items: center;
+}
+.casillaR,
+.casilla1,
+.casilla2,
+.casilla3,
+.casilla4,
+.casilla5,
+.casilla6 {
+    height: 3rem;
+    width: 3rem;
+    background-color: #808080;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ffffff; /* Bordes blancos para mayor contraste */
+}
+
+.casilla1:hover,
+.casilla2:hover,
+.casilla3:hover,
+.casilla4:hover,
+.casilla5:hover,
+.casilla6:hover {
+    cursor: pointer;
+}
+.correccion{
+    height: 5rem;
+    width: 5rem;
+    background-color: rgb(202, 202, 202);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.correccion1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.corre1{
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: rgb(141, 140, 140);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-size: 10px;
+    
+}
+.guiacorre{
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: rgb(141, 140, 140);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-size: 10px;
+}
+.ajuste{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.corre2{
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: rgb(141, 140, 140);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-size: 10px;
+}
+.corre3{
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: rgb(141, 140, 140);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-size: 10px;
+}
+.corre4{
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: rgb(141, 140, 140);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-size: 10px;
+}
+.corre5{
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: rgb(141, 140, 140);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-size: 10px;
+}
+.corre6{
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: rgb(141, 140, 140);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-size: 10px;
+}
+footer {
+    background-color: #212121;
+    height: 15vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.boton {
+    height: 15vh;
+    width: 10vw;
+    background-color: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.boton:hover {
+    background-color: #555555;
+}
+
+#play {
+    background-color: #00bfff; /* Azul claro para el botón de reproducción */
+}
+#play:hover{
+    background-color: #19c4fd;
+}
+#partidas{
+    
+    height: 10vh;
+    width: 59vw;
+    
+    
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+}
+.guia{
+    height: 3rem;
+    width: 10vw;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+
+}
+.guia2{
+    height: 3rem;
+    width: 15rem;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.color{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+}
+/* Para navegadores webkit (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 12px; /* Ancho de la barra de desplazamiento */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #333333; /* Color del "pulgar" de la barra de desplazamiento */
+    border-radius: 6px; /* Radio de borde del "pulgar" */
+}
+
+::-webkit-scrollbar-track {
+    background-color: #212121; /* Color de fondo de la pista de la barra de desplazamiento */
+}
+/* Estilos generales para la barra de desplazamiento (incluyendo Firefox) */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #333333;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #212121;
+}
+
+/* Estilos para Firefox */
+/* Establece el color del "pulgar" de la barra de desplazamiento */
