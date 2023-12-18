@@ -193,7 +193,7 @@ function checkear() {
     
 
     for (let j = 0; j < arraySolucion.length; j++) {
-        if (contRepeF.has(arrayUsuario[j])) {
+        if (setSolucion.has(arrayUsuario[j])) {
             if (arraySolucion[j] == arrayUsuario[j]) {
                 correcciones[turno-1][j].style.backgroundColor = "white";
                 contadorFinal++
@@ -245,6 +245,7 @@ function aleatorio(array, mapa) {
         do {
             array[i] = Math.ceil(Math.random() * 7);
         } while (array[i] === 0);
+        setSolucion.add(array[i]);
     }
     array.forEach((color) => {
         if (mapa.has(color)) {
