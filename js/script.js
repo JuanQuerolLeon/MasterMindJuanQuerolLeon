@@ -1,4 +1,4 @@
-// se crea dos arrays nuo con los getElementByClassName de las casillas y otro de las correcciones
+// se crea dos arrays uno con los getElementByClassName de las casillas y otro de las correcciones
 var casillas = [
     document.getElementsByClassName("casilla1"),
     document.getElementsByClassName("casilla2"),
